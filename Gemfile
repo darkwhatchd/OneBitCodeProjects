@@ -60,3 +60,8 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'rspec-rails', '~> 3.5'
+
+gem 'rest-client' #Permite fazer chamadas rest de dentro do APP
+gem 'webmock' #Permite fazer um default de resposta para o teste automatizado, evitando usar os dados reais da api durante o teste
