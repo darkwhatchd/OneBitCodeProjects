@@ -1,12 +1,17 @@
 .exchange_box{
- 
+
     .card{
       border: 0;
-   
+      border-radius: 10px;
+      font-family: 'Gill Sans', sans-serif;
+      background-color: goldenrod;
+      
       .card-header{
-        background-color: #878d99;
+        background-color: goldenrod;
         border-radius: 0;
-        color: white;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        color: black;
         font-weight: 700;
       }
    
@@ -15,14 +20,20 @@
         padding: 20px;
    
         .title{
-          color: #878d99;
+          color: black;
           font-weight: 700;
         }
-   
+        .button-invert{
+          background: url('/invertbutton.svg') no-repeat center;
+          background-color: #5bc0de;
+          border: 0;
+          height: 50px;
+          border-radius: 50%;
+        }
         .btn-exchange{
           background-color: #5bc0de;
           border-color: #5bc0de;
-          border-radius: 0;
+          border-radius: 10px;
         }
       }
     }
