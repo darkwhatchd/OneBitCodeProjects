@@ -6,21 +6,28 @@ $(document).ready ->
     $("#source_currency").val(target_currency)
     $("#target_currency").val(source_currency)
   )
-                
-  $('form').submit ->
-    if $('form').attr('action') == '/convert'
-      $.ajax '/convert',
-          type: 'GET'
-          dataType: 'json'
-          data: {
-                  source_currency: $("#source_currency").val(),
-                  target_currency: $("#target_currency").val(),
-                  amount: $("#amount").val()
-                }
-          error: (jqXHR, textStatus, errorThrown) ->
-            alert textStatus
-          success: (data, text, jqXHR) ->
-            $('#result').val(data.value)
-        return false;
+
+  $('#amount').on('input', autoConvert)
+  $('#source_currency').on('change', autoConvert)
+  $('#target_currency').on('change', autoConvert)
+  $('#invertion-button').on('click', autoConvert)
+
+
+autoConvert = () ->            
+    $('#result').val('')
+    #if $('form').attr('action') == '/convert'
+    $.ajax '/convert',
+        type: 'GET'
+        dataType: 'json'
+        data: {
+                source_currency: $("#source_currency").val(),
+                target_currency: $("#target_currency").val(),
+                amount: $("#amount").val()
+              }
+        error: (jqXHR, textStatus, errorThrown) ->
+          alert textStatus
+        success: (data, text, jqXHR) ->
+          $('#result').val(data.value)
+      return false;
 
   

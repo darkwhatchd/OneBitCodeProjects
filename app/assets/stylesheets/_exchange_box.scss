@@ -25,15 +25,10 @@
         }
         .button-invert{
           background: url('/invertbutton.svg') no-repeat center;
-          background-color: #5bc0de;
+          background-color: goldenrod;
           border: 0;
           height: 50px;
           border-radius: 50%;
-        }
-        .btn-exchange{
-          background-color: #5bc0de;
-          border-color: #5bc0de;
-          border-radius: 10px;
         }
       }
     }
@@ -64,9 +59,5 @@
    
     #result {
       margin-bottom: 20px;
-    }
-   
-    .btn-exchange {
-      font-size: 20px;
     }
   }
