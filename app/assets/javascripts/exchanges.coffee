@@ -14,8 +14,6 @@ $(document).ready ->
 
 
 autoConvert = () ->            
-    $('#result').val('')
-    #if $('form').attr('action') == '/convert'
     $.ajax '/convert',
         type: 'GET'
         dataType: 'json'
