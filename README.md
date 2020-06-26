@@ -1,24 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Do a convertion of diferent coins in real time.
+In this project was used Docker, Ruby(2.5.1) and Ruby on Rails(5.2.3), coffeescript and bootstrap.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The project was deployed in Heroku.
+Visit http://myonebitexchange.herokuapp.com/ to see the final project.
